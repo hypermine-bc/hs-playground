@@ -45,6 +45,7 @@ module.exports = function (ctx) {
         'QFooter',
         'QScrollArea',
         'QIcon',
+        'QImg',
         'QInput',
         'QItem',
         'QItemSection',

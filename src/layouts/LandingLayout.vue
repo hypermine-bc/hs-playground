@@ -1,11 +1,11 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-footer height-hint="98" class="footer-height landing-footer">
-      <copyRight />
-    </q-footer>
     <q-page-container>
       <router-view />
     </q-page-container>
+    <q-footer height-hint="98" class="footer-height landing-footer">
+      <copyRight />
+    </q-footer>
   </q-layout>
 </template>
 

@@ -1,5 +1,9 @@
 <template >
-  <img alt="quasar logo" src="https://medici-prod.s3-us-west-2.amazonaws.com/uploads/passwordless-experiences-not-as-secure-as-they-seem.jpg">
+  <q-img
+    src="https://www.usbank.com/content/dam/usbank/images/online-security-pages/mobile-security.png"
+    style="max-width: 400px;"
+  >
+  </q-img>
 </template>
 
 <script>

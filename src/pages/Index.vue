@@ -2,6 +2,9 @@
   <div class="q-pa-md">
     <div class="row">
       <div class="col">
+        <div class="row padding-top">
+
+        </div>
         <div class="row">
           <LandingLogo/>
         </div>
@@ -12,7 +15,7 @@
           <LandingButton/>
         </div>
       </div>
-      <div class="col">
+      <div class="col bg-img">
         <LandingBgImage />
       </div>
     </div>
@@ -38,3 +41,12 @@ export default {
   }
 }
 </script>
+<style scoped>
+  .bg-img{
+    text-align: center;
+    padding: 3%;
+  }
+  .padding-top{
+    padding: 4%;
+  }
+</style>
