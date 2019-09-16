@@ -1,6 +1,6 @@
 <template >
   <q-img
-    src="https://www.usbank.com/content/dam/usbank/images/online-security-pages/mobile-security.png"
+    src="statics/Main-Artwork.png"
     style="max-width: 400px;"
   >
   </q-img>
