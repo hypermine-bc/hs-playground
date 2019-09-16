@@ -21,6 +21,10 @@ yarn run lint
 ```bash
 quasar build
 ```
+### Deploy to git-pages
+```bash
+quasar build
+cp /dist/spa/ ../../hypermine-bc.github.io/
 
-### Customize the configuration
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+```
+
