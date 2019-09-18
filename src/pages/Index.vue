@@ -1,10 +1,7 @@
 <template>
-  <div class="q-pa-md">
+  <div class="q-pa-md lyt-pd">
     <div class="row">
       <div class="col">
-        <div class="row padding-top">
-
-        </div>
         <div class="row">
           <LandingLogo/>
         </div>
@@ -15,7 +12,7 @@
           <LandingButton/>
         </div>
       </div>
-      <div class="col bg-img">
+      <div class="col">
         <LandingBgImage />
       </div>
     </div>
@@ -26,27 +23,23 @@
 </style>
 
 <script>
+import LandingLogo from 'components/LandingLogo.vue'
 import LandingBgImage from 'components/LandingBgImage.vue'
 import LandingButton from 'components/LandingButton.vue'
-import LandingLogo from 'components/LandingLogo.vue'
 import LandingTextContent from 'components/LandingTextContent.vue'
 
 export default {
   name: 'PageIndex',
   components: {
+    LandingLogo,
     LandingBgImage,
     LandingButton,
-    LandingLogo,
     LandingTextContent
   }
 }
 </script>
 <style scoped>
-  .bg-img{
-    text-align: center;
-    padding: 3%;
-  }
-  .padding-top{
-    padding: 4%;
+  .lyt-pd{
+    padding: 5% 0% 0% 10%;
   }
 </style>

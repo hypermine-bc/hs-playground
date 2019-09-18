@@ -2,6 +2,7 @@
   <q-img
     src="statics/Main-Artwork.png"
     style="max-width: 400px;"
+    class="img"
   >
   </q-img>
 </template>
@@ -16,4 +17,7 @@ export default {
 </script>
 
 <style>
+  .img{
+    margin-left: 10%;
+  }
 </style>
