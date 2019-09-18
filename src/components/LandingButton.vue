@@ -4,7 +4,7 @@
     class="btn-fixed-width"
     color="secondary"
     label="Go Play"
-    icon="flight_takeoff"
+    size="md"
     :ripple="{ color: 'yellow' }"
   />
 </template>

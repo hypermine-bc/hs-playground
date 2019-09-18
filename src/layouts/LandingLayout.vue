@@ -1,5 +1,28 @@
 <template>
   <q-layout view="lHh Lpr lFf">
+        <q-header>
+          <div class="q-pa-md">
+              <q-btn-dropdown class="glossy l-btn" color="secondary" size="xs" label="Select Language">
+                <q-list>
+                  <q-item clickable v-close-popup @click="onItemClick">
+                    <q-item-section>
+                      <q-item-label>English</q-item-label>
+                    </q-item-section>
+                  </q-item>
+                  <q-item clickable v-close-popup @click="onItemClick">
+                    <q-item-section>
+                      <q-item-label>Thai</q-item-label>
+                    </q-item-section>
+                  </q-item>
+                  <q-item clickable v-close-popup @click="onItemClick">
+                    <q-item-section>
+                      <q-item-label>Vietnami</q-item-label>
+                    </q-item-section>
+                  </q-item>
+                </q-list>
+              </q-btn-dropdown>
+            </div>
+        </q-header>
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -24,7 +47,10 @@ export default {
     }
   },
   methods: {
-    openURL
+    openURL,
+    onItemClick () {
+      console.log('Clicked on an Item')
+    }
   }
 }
 </script>
@@ -32,5 +58,8 @@ export default {
 <style>
 .landing-footer {
   background-color: #686969 !important;
+}
+.l-btn{
+  float: right;
 }
 </style>
