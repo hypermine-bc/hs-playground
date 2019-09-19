@@ -775,6 +775,13 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@dsb-norge/vue-keycloak-js@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@dsb-norge/vue-keycloak-js/-/vue-keycloak-js-1.1.2.tgz#cbda4e890a9ecc0d12f913a33f5a0cbcb170768f"
+  integrity sha512-1psG/3U6HszG+/bJNQTivJVWir846AOhS0cx88WVhf8ywOAx9L2mzHqiV8PxjW5v3KAhfixNhrMCAtU3/Y7vGQ==
+  dependencies:
+    keycloak-js "4.8.3"
+
 "@hapi/address@2.x.x":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.1.tgz#61395b5ed94c4cb19c2dc4c85969cff3d40d583f"
@@ -4588,6 +4595,16 @@ jsonify@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
   integrity sha1-LHS27kHZPKUbe1qu6PUDYx0lKnM=
+
+keycloak-js@4.8.3:
+  version "4.8.3"
+  resolved "https://registry.yarnpkg.com/keycloak-js/-/keycloak-js-4.8.3.tgz#e065f41d144d260afa8466b5b587a65d5f308d30"
+  integrity sha512-TXoZdoOYu2ScYs58L95/xSYjsTto9KRvZ+vt6mv4Dyf4pYhYZSgwMPnmi128qj/z8sm4mL1Z8nncR6XdWgNKMQ==
+
+keycloak-js@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/keycloak-js/-/keycloak-js-7.0.0.tgz#d39d57e2f174a19e12c41a11211a85d9a7e2afb8"
+  integrity sha512-d4CLYbPvYyGzp5Xce6OI3m7LfUYFoRhCgyHKxgoDL/q7nZoH/utv3ppGi/qwFhAN+QmzFQBACaDdEe/XCKf6rw==
 
 killable@^1.0.1:
   version "1.0.1"
