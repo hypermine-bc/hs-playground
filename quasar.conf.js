@@ -9,7 +9,7 @@ module.exports = function (ctx) {
       'i18n',
       'axios',
       'auth',
-      'hypersign'
+      'beforeeach'
     ],
 
     css: [
