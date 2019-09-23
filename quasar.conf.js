@@ -79,8 +79,15 @@ module.exports = function (ctx) {
     supportIE: true,
 
     build: {
+      env: ctx.dev
+      ? { // so on dev we'll have
+        authApi: JSON.stringify('http://localhost:8080/auth')
+      }
+      : { // and on build (production):
+        authApi: JSON.stringify('http://localhost:8080/auth')
+      },
       scopeHoisting: true,
-      // vueRouterMode: 'history',
+      vueRouterMode: 'history',
       // vueCompiler: true,
       // gzip: true,
       // analyze: true,

@@ -18,7 +18,7 @@ let ready = new Promise(resolve => {
       onLoad: 'check-sso'
     },
     config: {
-      url: 'http://localhost:8080/auth',
+      url: process.env.authApi,
       realm: 'hypermine',
       clientId: 'hs-playground'
     },
