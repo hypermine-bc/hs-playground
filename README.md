@@ -27,4 +27,19 @@ quasar build
 cp /dist/spa/ ../../hypermine-bc.github.io/
 
 ```
+### Setup hypersign
+```bash
+Open quasar.conf.js
+Look for ``build``
+in that add a new variable called ```hypersign```
+```
+```
+{
+    url: 'http://localhost:8080/auth',
+    realm: 'hypermine',
+    clientId: 'hs-playground'
+}
+```
+
+```
 
