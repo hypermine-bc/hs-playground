@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-        <q-header>
+        <!-- <q-header>
           <div class="q-pa-md">
               <q-btn-dropdown class="glossy l-btn" color="secondary" size="xs" label="Select Language">
                 <q-list>
@@ -22,7 +22,7 @@
                 </q-list>
               </q-btn-dropdown>
             </div>
-        </q-header>
+        </q-header> -->
     <q-page-container>
       <router-view />
     </q-page-container>

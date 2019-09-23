@@ -4,6 +4,7 @@
     class="btn-fixed-width"
     color="secondary"
     label="Go Play"
+    @click="goToDashboard"
     size="md"
     :ripple="{ color: 'yellow' }"
   />
@@ -14,6 +15,12 @@ export default {
   name: 'CopyRight',
   data () {
     return {}
+  },
+  methods: {
+    goToDashboard () {
+      console.log('I am in Dashboard')
+      this.$router.push('dashboard')
+    }
   }
 }
 </script>
