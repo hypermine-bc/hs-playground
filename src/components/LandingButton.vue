@@ -18,7 +18,6 @@ export default {
   },
   methods: {
     goToDashboard () {
-      alert('sss')
       console.log('I am in Dashboard')
       this.$router.push('dashboard')
     }
