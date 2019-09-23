@@ -1,9 +1,6 @@
 export default ({ router, store, Vue }) => {
   // const whiteList = ['/auth/login', '/auth/register'] // whitelist routes
   router.beforeEach((to, from, next) => {
-    console.log(to)
-    console.log(router.app.$keycloak)
-    debugger
     if (to.matched.some(record => record.meta.requiresAuth)) {
       if (router.app.$keycloak.authenticated) {
         next()

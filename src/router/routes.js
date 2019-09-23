@@ -4,10 +4,20 @@ const routes = [
     path: '/',
     component: () => import('layouts/LandingLayout.vue'),
     meta: {
-      requiresAuth: true
+      requiresAuth: false
     },
     children: [
       { path: '', component: () => import('pages/Index.vue') }
+    ]
+  },
+  {
+    path: '/dashboard',
+    component: () => import('layouts/MyLayout.vue'),
+    meta: {
+      requiresAuth: true
+    },
+    children: [
+      { path: '', component: () => import(/* webpackChunkName: "dashboard" */'pages/dashboard.vue') }
     ]
   }
 ]
