@@ -81,10 +81,18 @@ module.exports = function (ctx) {
     build: {
       env: ctx.dev
       ? { // so on dev we'll have
-        authApi: JSON.stringify('http://localhost:8080/auth')
+          hypersign: JSON.stringify({
+            url: 'http://localhost:8080/auth',
+            realm: 'hypermine',
+            clientId: 'hs-playground'
+          })
       }
       : { // and on build (production):
-        authApi: JSON.stringify('http://localhost:8080/auth')
+          hypersign: JSON.stringify({
+            url: 'http://localhost:8080/auth',
+            realm: 'hypermine',
+            clientId: 'hs-playground'
+          })
       },
       scopeHoisting: true,
       vueRouterMode: 'history',

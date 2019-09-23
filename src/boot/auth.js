@@ -17,11 +17,7 @@ let ready = new Promise(resolve => {
       // If using 'login-required', there is no need for the router guards in router.js
       onLoad: 'check-sso'
     },
-    config: {
-      url: process.env.authApi,
-      realm: 'hypermine',
-      clientId: 'hs-playground'
-    },
+    config: process.env.hypersign,
     onReady: resolve
   })
 })
