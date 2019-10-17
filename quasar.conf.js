@@ -84,14 +84,14 @@ module.exports = function (ctx) {
           hypersign: JSON.stringify({
             url: 'http://localhost:8080/auth',
             realm: 'hypermine',
-            clientId: 'hs-playground'
+            clientId: 'master'
           })
       }
       : { // and on build (production):
           hypersign: JSON.stringify({
             url: 'http://localhost:8080/auth',
             realm: 'hypermine',
-            clientId: 'hs-playground'
+            clientId: 'master'
           })
       },
       scopeHoisting: true,
