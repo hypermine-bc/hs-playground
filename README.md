@@ -2,6 +2,16 @@
 
 Its a playground to test Hypersign Authentication
 
+## Pre-requisites
+
+```sh
+# install yarn
+sudo npm install yarn –g 
+
+# install quasar
+sudo npm install -g @quasar/cli
+```
+
 ## Install the dependencies
 ```bash
 yarn
