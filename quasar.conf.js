@@ -84,14 +84,14 @@ module.exports = function (ctx) {
           hypersign: JSON.stringify({
             url: 'https://dev.hs.hypermine.in/keycloak/auth',
             realm: 'master',
-            clientId: 'hs-playground-local'
+            clientId: 'hs-playground'
           })
       }
       : { // and on build (production):
           hypersign: JSON.stringify({
             url: 'https://dev.hs.hypermine.in/keycloak/auth',
             realm: 'master',
-            clientId: 'hs-playground-local'
+            clientId: 'hs-playground'
           })
       },
       scopeHoisting: true,
