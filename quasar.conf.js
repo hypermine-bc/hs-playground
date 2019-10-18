@@ -82,15 +82,15 @@ module.exports = function (ctx) {
       env: ctx.dev
       ? { // so on dev we'll have
           hypersign: JSON.stringify({
-            url: 'http://localhost:8080/auth',
-            realm: 'hypermine',
+            url: 'https://dev.hs.hypermine.in/keycloak/auth',
+            realm: 'master',
             clientId: 'hs-playground'
           })
       }
       : { // and on build (production):
           hypersign: JSON.stringify({
-            url: 'http://localhost:8080/auth',
-            realm: 'hypermine',
+            url: 'https://dev.hs.hypermine.in/keycloak/auth',
+            realm: 'master',
             clientId: 'hs-playground'
           })
       },
