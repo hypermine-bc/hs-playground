@@ -1,5 +1,5 @@
 <template>
-  <img alt="logo" src="http://www.hypermine.in/hypersign/wp-content/uploads/2019/03/Banner_logo2.png" />
+  <img alt="logo" src="statics/Loggedintext.png" />
 </template>
 
 <script>

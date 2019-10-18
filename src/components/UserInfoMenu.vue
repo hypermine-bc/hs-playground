@@ -8,6 +8,7 @@
             <div class="q-avatar__content row flex-center overflow-hidden"><img src="https://cdn.quasar.dev/img/boy-avatar.png"></div>
             </div>
             <div class="text-weight-bold">{{name}}</div>
+            <div class="">{{pubkey}}</div>
             <div>{{email}}</div>
             <!-- <div>{{$keycloak}}</div> -->
         </div>
@@ -21,14 +22,16 @@ export default {
   data () {
     return {
       name: '',
+      pubkey: '',
       email: ''
     }
   },
   created () {
-    console.log('this.$keycloak')
+    console.log(this.$keycloak.authenticated, 'keycloak')
     // console.log(this.$keycloak.tokenParsed.email)
     this.email = this.$keycloak.tokenParsed.email
-    this.name = this.$keycloak.tokenParsed.name
+    this.name = this.$keycloak.tokenParsed.preferred_username
+    this.pubkey = this.$keycloak.subject
   }
 }
 </script>
