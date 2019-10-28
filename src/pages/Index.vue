@@ -27,7 +27,7 @@
         </div>
         <div class="col">
           <h2 style="margin-top: 0px;">
-            <q-btn @click="isMenuActive=true">Open</q-btn>
+            <q-btn @click="isMenuActive=true">Open Partner Sections</q-btn>
           </h2>
         </div>
       </div>
