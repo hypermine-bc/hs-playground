@@ -20,7 +20,15 @@
        <!-- <UserInfoMenu/> -->
       <div class="row" style="text-align: center;">
         <div class="col">
+          <h2 style="margin-top: 0px;"></h2>
+        </div>
+        <div class="col">
           <h2 style="margin-top: 0px;">SUCCESS!</h2>
+        </div>
+        <div class="col">
+          <h2 style="margin-top: 0px;">
+            <q-btn @click="isMenuActive=true">Open</q-btn>
+          </h2>
         </div>
       </div>
       <div class="row">
@@ -39,6 +47,13 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col">
+          <transition name="slide-fade">
+            <MenuHover v-if="isMenuActive" @closeMenu="isMenuActive=false"/>
+          </transition>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -48,6 +63,7 @@
 
 <script>
 import LandingLogo from 'components/LandingLogo.vue'
+import MenuHover from 'components/MenuHover.vue'
 import RegisterLogo from 'components/RegisterLogo.vue'
 import LandingBgImage from 'components/LandingBgImage.vue'
 import RegisterBgImage from 'components/RegisterBgImage.vue'
@@ -63,6 +79,7 @@ export default {
     LandingBgImage,
     LandingButton,
     LandingTextContent,
+    MenuHover,
     RegisterLogo,
     RegisterBgImage
     // RegisterTextContent
@@ -73,6 +90,7 @@ export default {
       name: '',
       pubkey: '',
       loggedin: false,
+      isMenuActive: false,
       email: ''
     }
   },
@@ -99,4 +117,13 @@ export default {
     line-height: 3.125rem;
     letter-spacing: normal;
   }
+  .slide-fade-enter-active {
+  transition: all .3s ease;
+}
+
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
 </style>

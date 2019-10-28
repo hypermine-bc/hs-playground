@@ -35,6 +35,8 @@ module.exports = function (ctx) {
       // all: true, // --- includes everything; for dev only!
 
       components: [
+        'QCard',
+        'QCardActions',
         'QAvatar',
         'QCheckbox',
         'QBtn',
@@ -84,14 +86,14 @@ module.exports = function (ctx) {
           hypersign: JSON.stringify({
             url: 'https://dev.hs.hypermine.in/keycloak/auth',
             realm: 'master',
-            clientId: 'hs-playground'
+            clientId: 'hs-playground-local'
           })
       }
       : { // and on build (production):
           hypersign: JSON.stringify({
             url: 'https://dev.hs.hypermine.in/keycloak/auth',
             realm: 'master',
-            clientId: 'hs-playground'
+            clientId: 'hs-playground-local'
           })
       },
       scopeHoisting: true,
