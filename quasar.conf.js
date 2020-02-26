@@ -82,9 +82,9 @@ module.exports = function (ctx) {
 
     build: {
       env: ctx.dev
-      ? { // so on dev we'll have
+      ? { // Dev Build
           hypersign: JSON.stringify({
-            url: 'https://dev.hs.hypermine.in/keycloak/auth',
+            url: 'http://localhost:8080/auth',
             realm: 'master',
             clientId: 'hs-playground-local'
           })
