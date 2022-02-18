@@ -4601,11 +4601,6 @@ keycloak-js@4.8.3:
   resolved "https://registry.yarnpkg.com/keycloak-js/-/keycloak-js-4.8.3.tgz#e065f41d144d260afa8466b5b587a65d5f308d30"
   integrity sha512-TXoZdoOYu2ScYs58L95/xSYjsTto9KRvZ+vt6mv4Dyf4pYhYZSgwMPnmi128qj/z8sm4mL1Z8nncR6XdWgNKMQ==
 
-keycloak-js@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/keycloak-js/-/keycloak-js-6.0.1.tgz#329a5e77210dfc4a7d4acf96f95dd0132455bea3"
-  integrity sha512-p02dBCA9pSH1xvTmRIEMdeMz00eCGKmZF+rjMeqrkiQD4xhXkzu50J9sQjaANolMlLhazOtfql70+N5QWm8Upg==
-
 killable@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/killable/-/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"
@@ -5841,11 +5836,6 @@ pkg-up@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
-plugin-vuejs-keycloak@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/plugin-vuejs-keycloak/-/plugin-vuejs-keycloak-0.0.2.tgz#1324cee5ff9a7ca70ced16e2f0ef7aa0c3e3493c"
-  integrity sha512-SrvXW42OUVHcPBKApS8KMsK7fxJUEIo/LA5eRDoOSK2Pu2cPE8iBJIPHH9kYvyzTq1XCX3J+F/OobLsRa7HUMA==
-
 portfinder@^1.0.21:
   version "1.0.24"
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.24.tgz#11efbc6865f12f37624b6531ead1d809ed965cfa"
@@ -6392,9 +6382,9 @@ querystring@0.2.0:
   integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
 
 querystringify@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
-  integrity sha512-w7fLxIRCRT7U8Qu53jQnJyPkYZIaR4n5151KMfcJlO/A9397Wxb1amJvROTK6TOnp7PfoAmg/qXiNHI+08jRfA==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"
+  integrity sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
@@ -7699,9 +7689,9 @@ url-loader@2.1.0:
     schema-utils "^2.0.0"
 
 url-parse@^1.4.3:
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.4.7.tgz#a8a83535e8c00a316e403a5db4ac1b9b853ae278"
-  integrity sha512-d3uaVyzDB9tQoSXFvuSUNFibTd9zxd2bkVrDRvF5TmvWWQwqE4lgYJ5m+x1DbecWkw+LK4RNl2CU1hHuOKPVlg==
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.5.7.tgz#00780f60dbdae90181f51ed85fb24109422c932a"
+  integrity sha512-HxWkieX+STA38EDk7CE9MEryFeHCKzgagxlGvsdS7WBImq9Mk+PGwiT56w82WI3aicwJA8REp42Cxo98c8FZMA==
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
